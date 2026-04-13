@@ -123,16 +123,17 @@
             <input type="hidden" name="_subject" value="Новая заявка на обучение">
             <label>
               Имя
-              <input type="text" name="name" placeholder="Ваше имя">
+              <input type="text" name="name" placeholder="Ваше имя" required>
             </label>
 
             <label>
               Телефон или Telegram
-              <label>
-  Email
-  <input type="email" name="email" placeholder="yourmail@example.com">
-</label>
-              <input type="text" name="contact" placeholder="+7... или @username">
+              <input type="text" name="contact" placeholder="+7... или @username" required>
+            </label>
+
+            <label>
+              Email
+              <input type="email" name="email" placeholder="yourmail@example.com" required>
             </label>
 
             <label>
