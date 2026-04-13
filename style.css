@@ -266,7 +266,10 @@ section {
   box-shadow: var(--shadow);
 }
 .article-image {
-  border-radius: 16px;
-  margin: 20px 0;
+  display: block;
   width: 100%;
+  max-width: 760px;
+  height: auto;
+  border-radius: 16px;
+  margin: 20px auto;
 }
