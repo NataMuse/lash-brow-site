@@ -268,7 +268,7 @@ section {
 .article-image {
   display: block;
   width: 100%;
-  max-width: 680px;
+  max-width: 580px;
   height: auto;
   border-radius: 16px;
   margin: 20px auto;
