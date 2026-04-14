@@ -49,8 +49,8 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 20px;
-  padding: 18px 0;
+  gap: 28px;
+  padding: 14px 0;
 }
 
 .logo {
@@ -268,14 +268,17 @@ section {
 .article-image {
   display: block;
   width: 100%;
+  max-width: 380px;
   height: auto;
   border-radius: 18px;
-}.article-intro-grid {
+  box-shadow: var(--shadow);
+}
+.article-intro-grid {
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 32px;
-  align-items: start;
-  margin: 24px 0 32px;
+  grid-template-columns: minmax(0, 1fr) 400px;
+  gap: 40px;
+  align-items: center;
+  margin: 24px 0 40px;
 }
 
 .article-intro-text p:first-child {
@@ -284,7 +287,7 @@ section {
 
 .article-intro-visual {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 @media (max-width: 900px) {
@@ -302,26 +305,30 @@ section {
 }
 
 .logo img {
-  height: 52px;
+  height: 64px;
   width: auto;
   display: block;
+  object-fit: contain;
 }
 
 .training-logo-box {
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: 22px;
-  padding: 24px;
+  padding: 18px;
   box-shadow: var(--shadow);
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 260px;
+  min-height: 220px;
 }
 
 .training-logo-image {
   width: 100%;
-  max-width: 280px;
+  max-width: 360px;
   height: auto;
   display: block;
+}
+.article-page .container {
+  width: min(960px, calc(100% - 40px));
 }
