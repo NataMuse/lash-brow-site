@@ -273,3 +273,29 @@ section {
   border-radius: 16px;
   margin: 20px auto;
 }
+.logo img {
+  height: 50px;
+  width: auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+}header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}header {
+  border-bottom: 1px solid #eee;
+}header {
+  background: #fff;
+}.main-logo {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.main-logo img {
+  width: 200px;
+  max-width: 80%;
+}
