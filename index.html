@@ -9,22 +9,38 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <div class="header-top">
-        <a href="index.html" class="logo">
-    <img src="images/logo-header.png" alt="Lash Lami Guide">
-  </a>
-  <nav class="main-nav">
-    <a href="index.html">Главная</a>
-    <a href="about.html">Об авторе</a>
-    <a href="articles.html">Статьи</a>
-    <a href="training.html">Обучение</a>
-    <a href="contacts.html">Контакты</a>
-  </nav>
-      </div>
-    </div>
-  </header>
+  <div class="top-announcement">
+  <div class="announcement-track">
+    <span>Новая статья: как сохранить эффект ламинирования дольше</span>
+    <span>•</span>
+    <span>Открыт прием заявок на обучение</span>
+    <span>•</span>
+    <span>Читайте экспертные материалы о бровях и ресницах</span>
+  </div>
+</div>
+<header class="site-header">
+<div class="container">
+  <div class="header-top">
+    <a href="index.html" class="logo">
+      <img src="images/logo-header.png" alt="Lash Lami Guide">
+    </a>
+
+    <button class="burger" id="burger-button" aria-label="Открыть меню" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="main-nav" id="main-nav">
+      <a href="index.html">Главная</a>
+      <a href="about.html">Об авторе</a>
+      <a href="articles.html">Статьи</a>
+      <a href="training.html">Обучение</a>
+      <a href="contacts.html">Контакты</a>
+    </nav>
+  </div>
+</div>
+</header>
   <section class="training-preview">
     <div class="container">
       <div class="section-heading">
@@ -133,6 +149,16 @@
       <p>© 2026 Lash Lami Guide. Все права защищены.</p>
     </div>
   </footer>
+  <script>
+    const burgerButton = document.getElementById('burger-button');
+    const mainNav = document.getElementById('main-nav');
 
+    if (burgerButton && mainNav) {
+      burgerButton.addEventListener('click', () => {
+        const isOpen = mainNav.classList.toggle('is-open');
+        burgerButton.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+    }
+  </script>
 </body>
 </html>
